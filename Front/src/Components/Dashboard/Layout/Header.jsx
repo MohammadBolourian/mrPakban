@@ -8,7 +8,7 @@ const Header = () => {
               <Link className="menu-link" to="/">
                   خروج
               </Link>
-              <Link className="menu-link notify is-active" to="/">
+              <Link className="menu-link notify is-active" to="/dashboard/home">
                   داشبورد
               </Link>
           </div>

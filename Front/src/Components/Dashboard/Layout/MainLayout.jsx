@@ -1,11 +1,12 @@
 import React from "react";
+import {Outlet} from "react-router-dom"
 import './MainLayout.css';
 import myvid from '../../../assets/video.mp4'
 import Theme from "./Common/Theme";
 import Header from "./Header";
 import SideBar from "./Common/SideBar";
 
-const MainLayout = (props) =>{
+const MainLayout = () =>{
     return(
             <div className={"body"}>
             <div className="video-bg">
@@ -22,7 +23,7 @@ const MainLayout = (props) =>{
                    <SideBar />
                     <div className="main-container">
                         <div className="content-wrapper">
-                        {props.children}
+                            <Outlet/>
                         </div>
                     </div>
                 </div>
